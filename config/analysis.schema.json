@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {"type": "string"},
+    "assessment": {"type": "string"},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "kind": {"type": "string", "enum": ["reported", "calculated", "interpretation"]},
+          "text": {"type": "string"},
+          "value": {"type": ["string", "null"]},
+          "unit": {"type": ["string", "null"]},
+          "calculation_id": {"type": ["string", "null"]},
+          "metric_ids": {"type": "array", "items": {"type": "string"}},
+          "research_refs": {"type": "array", "items": {"type": "integer", "minimum": 1}},
+          "caveat": {"type": "string"}
+        },
+        "required": ["id", "kind", "text", "value", "unit", "calculation_id", "metric_ids", "research_refs", "caveat"]
+      }
+    },
+    "risks_to_watch": {"type": "array", "items": {"type": "string"}},
+    "open_questions": {"type": "array", "items": {"type": "string"}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["title", "assessment", "claims", "risks_to_watch", "open_questions", "limitations"]
+}

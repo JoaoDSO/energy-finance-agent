@@ -1,0 +1,14 @@
+{
+  "source_id": "orsted_q32026",
+  "page": 40,
+  "source_sha256": "cddf0168d0108500dd6ca22bd2ceadb88f7bf0989b9d57adc63ce171b0bf9ef4",
+  "unit": "DKKm",
+  "currency": "DKK",
+  "column_dates_left_to_right": ["2026-09-30", "2025-12-31", "2025-09-30"],
+  "column_check": "Builder visually inspected the original rendered PDF on 17 November 2026. Reviewer model previously read indexed text only. This is not autonomous column identification or a claim of visual review by that model.",
+  "rows": [
+    {"key": "cash", "label": "Cash", "values": ["13519", "53448", "8677"]},
+    {"key": "securities", "label": "Securities", "values": ["63101", "38317", "21376"]}
+  ],
+  "warning": "Gross reported cash plus securities is not total liquidity reserve, unrestricted usable liquidity or a forecast funding/collateral measure. Do not add the gross total to management's liquidity reserve."
+}

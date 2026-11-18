@@ -1,0 +1,22 @@
+{
+  "as_of_date": "2026-11-17",
+  "company": "Vestas Wind Systems A/S",
+  "question": "What do Vestas's FY2025 and 9M2026 disclosures show about whether its stronger earnings and order backlog are translating into operating cash flow and adjusted free cash flow, and what remains uncertain about working capital and capital returns?",
+  "allowed_hosts": ["www.vestas.com"],
+  "sources": [
+    {
+      "id": "vestas_fy2025",
+      "title": "Vestas Annual Report 2025",
+      "period": "FY2025",
+      "filename": "vestas_fy2025.pdf",
+      "url": "https://www.vestas.com/content/dam/vestas-com/global/en/investor/reports-and-presentations/financial/2025/fy-2025/Vestas%20Annual%20Report%202025.pdf.coredownload.inline.pdf"
+    },
+    {
+      "id": "vestas_q32026",
+      "title": "Vestas Interim Report, Third Quarter 2026",
+      "period": "Q3 and 9M2026",
+      "filename": "vestas_q32026.pdf",
+      "url": "https://www.vestas.com/content/dam/vestas-com/global/en/investor/reports-and-presentations/financial/2026/q3-2026/261111_59_Company_Announcement.pdf.coredownload.inline.pdf"
+    }
+  ]
+}

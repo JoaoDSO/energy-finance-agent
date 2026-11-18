@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "verdict": {"type": "string", "enum": ["pass", "revise"]},
+    "summary": {"type": "string"},
+    "claim_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "claim_id": {"type": "string"},
+          "result": {"type": "string", "enum": ["supported", "needs_revision"]},
+          "rationale": {"type": "string"},
+          "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}
+        },
+        "required": ["claim_id", "result", "rationale", "evidence"]
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "severity": {"type": "string", "enum": ["material", "minor"]},
+          "claim_id": {"type": ["string", "null"]},
+          "issue": {"type": "string"},
+          "requested_change": {"type": "string"},
+          "evidence": {"type": "array", "items": {"$ref": "#/$defs/evidence"}}
+        },
+        "required": ["id", "severity", "claim_id", "issue", "requested_change", "evidence"]
+      }
+    },
+    "sections_checked": {"type": "array", "items": {"type": "string", "enum": ["assessment", "risks_to_watch", "open_questions", "limitations"]}},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["verdict", "summary", "claim_checks", "findings", "sections_checked", "limitations"],
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {"type": "string"},
+        "page": {"type": "integer", "minimum": 1},
+        "excerpt": {"type": "string"}
+      },
+      "required": ["source_id", "page", "excerpt"]
+    }
+  }
+}

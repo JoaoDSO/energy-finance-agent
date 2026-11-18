@@ -1,0 +1,28 @@
+{
+  "as_of_date": "2026-11-17",
+  "company": "Orsted",
+  "question": "What do Orsted's latest public results show about its ability to fund its offshore-wind construction programme, and which financing pressures remain?",
+  "sources": [
+    {
+      "id": "orsted_fy2025",
+      "title": "Orsted Annual Report 2025",
+      "period": "FY2025",
+      "filename": "orsted_fy2025.pdf",
+      "url": "https://cdn.orsted.com/-/media/annual-2025/annual-report-2025.pdf?hash=D5AF74AEDCCB4EB539AAD875E368374A&rev=34ff0f324dc1429bac1bc84382c30a9d"
+    },
+    {
+      "id": "orsted_q32026",
+      "title": "Orsted Interim Financial Report Q3 2026",
+      "period": "Q3 and 9M2026",
+      "filename": "orsted_q32026.pdf",
+      "url": "https://cdn.orsted.com/-/media/q32026/orsted-interim-financial-report-q3-2026.pdf?hash=BF8F727EC2E6ECAB7946480D89175E26&rev=2d35d305456e45b1b9a421c86bf40a95"
+    },
+    {
+      "id": "orsted_q32026_call",
+      "title": "Orsted Q3 2026 earnings-call transcript - management statements",
+      "period": "Q3 2026 earnings call",
+      "filename": "orsted_q32026_call.pdf",
+      "url": "https://cdn.orsted.com/-/media/q32026/q3-2026---earnings-call-transcript.pdf?rev=5d2a4909a1bd41d2a87ea938bb950b1e&hash=64D487D1DB9EA86E4C4198465527648F"
+    }
+  ]
+}

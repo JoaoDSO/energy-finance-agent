@@ -1,0 +1,9 @@
+{
+  "display_label": "Vestas cash-conversion review",
+  "current_package": null,
+  "research_client": "claude_desktop",
+  "execution_mode": "on_demand",
+  "background_schedule": false,
+  "publication_enabled": false,
+  "funding_sufficiency_approval_enabled": false
+}

@@ -1,0 +1,55 @@
+{
+  "provenance": "Initial benchmark manually transcribed by the Codex builder and visually checked against the original PDF tables on 17 November 2026. This is not autonomous table extraction or a user approval.",
+  "currency": "DKK",
+  "unit": "DKKm",
+  "tables": [
+    {
+      "id": "annual_cashflow",
+      "source_id": "orsted_fy2025",
+      "page": 30,
+      "source_sha256": "b45e5c2c12ec7d5942179e32535d0046f6e5c214ee9085525ca361a28e8b35ab",
+      "columns": [
+        {"period": "FY2025", "start": "2025-01-01", "end": "2025-12-31", "opening": "2024-12-31", "months": 12},
+        {"period": "FY2024", "start": "2024-01-01", "end": "2024-12-31", "opening": "2023-12-31", "months": 12}
+      ],
+      "extra_debt_effects": ["hybrid_issuance_effect", "capital_transactions_effect"],
+      "rows": [
+        {"key": "cfo", "label": "Cash flows from operating activities", "basis": "cash_flow", "row": "Cash flows from operating activities 23,741 18,356 29 %", "values": ["23741", "18356"]},
+        {"key": "wip", "label": "Change in work in progress", "basis": "cash_flow", "row": "Change in work in progress 11,536 (3,803) n.a.", "values": ["11536", "-3803"]},
+        {"key": "investment", "label": "Gross investments", "basis": "cash_flow", "row": "Gross investments (54,976) (42,808) 28 %", "values": ["-54976", "-42808"]},
+        {"key": "divestment", "label": "Divestments", "basis": "cash_flow", "row": "Divestments 12,385 15,680 (21 %)", "values": ["12385", "15680"]},
+        {"key": "fcf", "label": "Free cash flow", "basis": "cash_flow", "row": "Free cash flow (18,850) (8,772) 115 %", "values": ["-18850", "-8772"]},
+        {"key": "debt_open", "label": "Net interest-bearing debt at 1 January", "basis": "opening_balance", "row": "Net interest-bearing debt at 1 January 58,027 47,379 22 %", "values": ["58027", "47379"]},
+        {"key": "dividends_hybrid", "label": "Dividends and hybrid coupons paid", "basis": "debt_effect", "row": "Dividends and hybrid coupons paid 2,643 1,028 157 %", "values": ["2643", "1028"]},
+        {"key": "leases", "label": "Addition of leasing obligations, net", "basis": "debt_effect", "row": "Addition of leasing obligations, net 3,315 1,076 208 %", "values": ["3315", "1076"]},
+        {"key": "hybrid_issuance_effect", "label": "Issuance of hybrid capital, net", "basis": "debt_effect", "row": "Issuance of hybrid capital, net - (1,813) n.a.", "values": ["0", "-1813"]},
+        {"key": "capital_transactions_effect", "label": "Capital transactions, principal shareholder", "basis": "debt_effect", "row": "Capital transactions, principal shareholder (59,378) - n.a.", "values": ["-59378", "0"]},
+        {"key": "fx_other", "label": "Exchange rate adjustments, etc.", "basis": "debt_effect", "row": "Exchange rate adjustments, etc. (4,479) 1,585 n.a.", "values": ["-4479", "1585"]},
+        {"key": "debt_close", "label": "Net interest-bearing debt at 31 December", "basis": "closing_balance", "row": "Net interest-bearing debt at 31 December 18,978 58,027 (67 %)", "values": ["18978", "58027"]}
+      ]
+    },
+    {
+      "id": "interim_cashflow",
+      "source_id": "orsted_q32026",
+      "page": 9,
+      "source_sha256": "cddf0168d0108500dd6ca22bd2ceadb88f7bf0989b9d57adc63ce171b0bf9ef4",
+      "columns": [
+        {"period": "9M2026", "start": "2026-01-01", "end": "2026-09-30", "opening": "2025-12-31", "months": 9},
+        {"period": "9M2025", "start": "2025-01-01", "end": "2025-09-30", "opening": "2024-12-31", "months": 9}
+      ],
+      "extra_debt_effects": [],
+      "rows": [
+        {"key": "cfo", "label": "Cash flow from operating activities", "basis": "cash_flow", "row": "Cash flow from operating activities 7,968 6,654 20 %", "values": ["7968", "6654"]},
+        {"key": "wip", "label": "Change in work in progress", "basis": "cash_flow", "row": "Change in work in progress (12,030) (3,116) 286 %", "values": ["-12030", "-3116"]},
+        {"key": "investment", "label": "Gross investments", "basis": "cash_flow", "row": "Gross investments (28,527) (39,924) (29 %)", "values": ["-28527", "-39924"]},
+        {"key": "divestment", "label": "Divestments", "basis": "cash_flow", "row": "Divestments 8,019 7,189 12 %", "values": ["8019", "7189"]},
+        {"key": "fcf", "label": "Free cash flow", "basis": "cash_flow", "row": "Free cash flow (12,540) (26,081) (52 %)", "values": ["-12540", "-26081"]},
+        {"key": "debt_open", "label": "Net interest-bearing debt, beginning of period", "basis": "opening_balance", "row": "Net interest-bearing debt, beginning of period 18,978 58,027 (67 %)", "values": ["18978", "58027"]},
+        {"key": "dividends_hybrid", "label": "Dividends and hybrid coupon paid", "basis": "debt_effect", "row": "Dividends and hybrid coupon paid 848 1,667 (49 %)", "values": ["848", "1667"]},
+        {"key": "leases", "label": "Addition of leasing obligations, net", "basis": "debt_effect", "row": "Addition of leasing obligations, net 3,771 761 396 %", "values": ["3771", "761"]},
+        {"key": "fx_other", "label": "Exchange rate adjustments, etc.", "basis": "debt_effect", "row": "Exchange rate adjustments, etc. 1,605 (3,382) n.a.", "values": ["1605", "-3382"]},
+        {"key": "debt_close", "label": "Net interest-bearing debt, end of period", "basis": "closing_balance", "row": "Net interest-bearing debt, end of period 37,742 83,154 (55 %)", "values": ["37742", "83154"]}
+      ]
+    }
+  ]
+}

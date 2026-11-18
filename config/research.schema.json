@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "question": {"type": "string"},
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "claim": {"type": "string"},
+          "source_id": {"type": "string"},
+          "page": {"type": "integer", "minimum": 1},
+          "excerpt": {"type": "string", "minLength": 25},
+          "caveat": {"type": "string"}
+        },
+        "required": ["claim", "source_id", "page", "excerpt", "caveat"]
+      }
+    },
+    "gaps": {"type": "array", "items": {"type": "string"}},
+    "next_checks": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["question", "findings", "gaps", "next_checks"]
+}

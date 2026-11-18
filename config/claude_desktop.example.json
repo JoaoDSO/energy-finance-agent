@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "energy-finance": {
+      "command": "ABSOLUTE_PATH_TO_PROJECT_PYTHON",
+      "args": ["ABSOLUTE_PATH_TO_PROJECT/src/mcp_server.py"]
+    },
+    "energy-finance-vestas": {
+      "command": "ABSOLUTE_PATH_TO_PROJECT_PYTHON",
+      "args": ["ABSOLUTE_PATH_TO_PROJECT/src/mcp_server.py", "--case", "vestas_cash_conversion_2026"]
+    }
+  }
+}

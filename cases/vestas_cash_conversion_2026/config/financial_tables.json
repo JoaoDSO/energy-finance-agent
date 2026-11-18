@@ -1,0 +1,65 @@
+{
+  "provenance": "Builder-transcribed from Vestas Q3 2026 interim report physical PDF page 4; visual column/row inspection on 17 November 2026. Not autonomous extraction or human financial approval. FY2025 summary values on that page should also be cross-checked against the annual report during review.",
+  "currency": "EUR",
+  "unit": "mEUR",
+  "operations": {
+    "cfo_growth_pct": {
+      "kind": "growth_pct",
+      "key": "cfo",
+      "formula": "(current operating cash flow / comparable prior operating cash flow - 1) * 100",
+      "caveat": "A 9M-on-9M historical comparison, not a forecast of cash conversion."
+    },
+    "cfo_change": {
+      "kind": "difference",
+      "key": "cfo",
+      "formula": "current operating cash flow - comparable prior operating cash flow",
+      "caveat": "A 9M-on-9M historical difference; working-capital and timing effects require separate interpretation."
+    },
+    "adjusted_fcf_change": {
+      "kind": "difference",
+      "key": "adjusted_fcf",
+      "formula": "current adjusted free cash flow - comparable prior adjusted free cash flow",
+      "caveat": "Uses Vestas's adjusted free cash flow definition, which differs from unadjusted free cash flow."
+    },
+    "ebit_margin_pct": {
+      "kind": "ratio_pct",
+      "numerator": "ebit_before_specials",
+      "denominator": "revenue",
+      "formula": "EBIT before special items / revenue * 100",
+      "caveat": "Computed from reported mEUR figures to two decimals; Vestas presents its margin rounded to one decimal."
+    }
+  },
+  "required_checks": [
+    {"operation": "cfo_growth_pct", "period": "9M2026", "reference_period": "9M2025"},
+    {"operation": "adjusted_fcf_change", "period": "9M2026", "reference_period": "9M2025"},
+    {"operation": "ebit_margin_pct", "period": "9M2026", "reference_period": null}
+  ],
+  "tables": [
+    {
+      "id": "interim_key_figures",
+      "source_id": "vestas_q32026",
+      "page": 4,
+      "source_sha256": "bc5aedb39a039e95525389b7026417cd22d7c2c0e7f63d8261099ea446c5a7f5",
+      "columns": [
+        {"period": "Q3_2026", "start": "2026-07-01", "end": "2026-09-30", "opening": "2026-06-30", "months": 3},
+        {"period": "Q3_2025", "start": "2025-07-01", "end": "2025-09-30", "opening": "2025-06-30", "months": 3},
+        {"period": "9M2026", "start": "2026-01-01", "end": "2026-09-30", "opening": "2025-12-31", "months": 9},
+        {"period": "9M2025", "start": "2025-01-01", "end": "2025-09-30", "opening": "2024-12-31", "months": 9},
+        {"period": "FY2025", "start": "2025-01-01", "end": "2025-12-31", "opening": "2024-12-31", "months": 12}
+      ],
+      "extra_debt_effects": [],
+      "rows": [
+        {"key": "revenue", "label": "Revenue", "basis": "income_statement_flow", "row": "Revenue 5,677 5,339 14,366 12,552 18,822", "values": ["5677", "5339", "14366", "12552", "18822"]},
+        {"key": "ebit_before_specials", "label": "Operating profit/(loss) (EBIT) before special items", "basis": "income_statement_flow", "row": "Operating profit/(loss) (EBIT) before special items 483 416 1,056 487 1,067", "values": ["483", "416", "1056", "487", "1067"]},
+        {"key": "cfo", "label": "Cash flow from operating activities", "basis": "cash_flow", "row": "Cash flow from operating activities 443 840 573 988 2,286", "values": ["443", "840", "573", "988", "2286"]},
+        {"key": "total_investments", "label": "Total investments", "basis": "cash_flow", "row": "Total investments (252) (274) (728) (869) (1,251)", "values": ["-252", "-274", "-728", "-869", "-1251"]},
+        {"key": "fcf", "label": "Free cash flow", "basis": "cash_flow", "row": "Free cash flow 145 538 (279) 76 1,122", "values": ["145", "538", "-279", "76", "1122"]},
+        {"key": "adjusted_fcf", "label": "Adjusted free cash flow1)", "basis": "cash_flow", "row": "Adjusted free cash flow1) 99 508 (340) (42) 830", "values": ["99", "508", "-340", "-42", "830"]},
+        {"key": "net_working_capital", "label": "Net working capital", "basis": "closing_balance", "row": "Net working capital (2,075) (2,561) (2,075) (2,561) (3,127)", "values": ["-2075", "-2561", "-2075", "-2561", "-3127"]},
+        {"key": "order_intake", "label": "Order intake (bnEUR)", "basis": "order_flow", "unit": "bnEUR", "row": "Order intake (bnEUR) 4.1 4.6 12.7 10.7 17.4", "values": ["4.1", "4.6", "12.7", "10.7", "17.4"]},
+        {"key": "turbine_backlog", "label": "Order backlog – wind turbines (bnEUR)", "basis": "closing_balance", "unit": "bnEUR", "row": "Order backlog – wind turbines (bnEUR) 35.9 31.6 35.9 31.6 33.2", "values": ["35.9", "31.6", "35.9", "31.6", "33.2"]},
+        {"key": "service_backlog", "label": "Order backlog – service (bnEUR)", "basis": "closing_balance", "unit": "bnEUR", "row": "Order backlog – service (bnEUR) 42.0 36.6 42.0 36.6 38.7", "values": ["42.0", "36.6", "42.0", "36.6", "38.7"]}
+      ]
+    }
+  ]
+}
